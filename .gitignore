@@ -28,6 +28,7 @@ cache
 build
 dist
 tests_out
+bower_components
 
 #-----------
 # Windows

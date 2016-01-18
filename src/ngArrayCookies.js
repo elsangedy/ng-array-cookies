@@ -34,7 +34,7 @@
     //---
 
     function update(method, key, value, config, autoCreate) {
-      autoCreate = angular.isUndefined(autoCreate) ? true : false;
+      autoCreate = angular.isUndefined(autoCreate) ? true : autoCreate;
 
       var obj = $delegate.getObject(key);
       if(angular.isArray(obj)) {

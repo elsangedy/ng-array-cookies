@@ -1,0 +1,25 @@
+{
+  "name": "ng-array-cookies",
+  "description": "Adds new features to ngCookies.",
+  "main": "",
+  "authors": [
+    "Munir Ahmed Elsangedy <elsangedy@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "angularJS",
+    "javascript",
+    "ngCookies"
+  ],
+  "homepage": "https://github.com/munir7/ng-array-cookies",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -19,6 +19,7 @@ $.rootRequire = function( name ) {
 $.del           = require('del');
 $.lazypipe      = require('lazypipe');
 $.runSequence   = require('run-sequence');
+$.karma         = require('karma');
 
 //--- local modules
 
