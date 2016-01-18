@@ -9,6 +9,7 @@ var app = angular.module('myModule', ['ngArrayCookies']);
 app.controller(['$cookies', function($cookies) {
   $cookies.putObject('example', [{name:'teste1'}]);
   $cookies.unshiftObject('example', [{name:'teste0'}, {name:'teste2'}]);
+  $cookies.appendObject('example', {name:'teste3'});
   $cookies.spliceObject('example', 1);
   console.log($cookies.getObject('example'));
 }]);
