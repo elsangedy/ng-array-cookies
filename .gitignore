@@ -21,13 +21,6 @@ npm-debug.log
 #-----------
 # project files
 
-.local
-.temp
-temp
-cache
-build
-dist
-tests_out
 bower_components
 
 #-----------

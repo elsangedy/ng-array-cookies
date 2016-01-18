@@ -55,7 +55,7 @@ describe('ngArrayCookies', function() {
       name: 'test'
     };
 
-    $cookies.appendObject('test', value, {}, true);
+    $cookies.appendObject('test', value, {}, false);
 
     expect($cookies.getObject('test')).toBeUndefined();
   }));
