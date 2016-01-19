@@ -28,6 +28,7 @@
     "gulp-inject-string": "^1.1.0",
     "gulp-jasmine": "^2.2.1",
     "gulp-jshint": "^2.0.0",
+    "gulp-karma": "0.0.5",
     "gulp-lintspaces": "^0.3.4",
     "gulp-load-plugins": "^1.2.0",
     "gulp-rename": "^1.2.2",
