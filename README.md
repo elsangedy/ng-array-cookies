@@ -1,4 +1,4 @@
-# ngArrayCookies
+# ngArrayCookies &nbsp;[![Build Status](https://travis-ci.org/munir7/ng-array-cookies.svg?branch=master)](https://travis-ci.org/munir7/ng-array-cookies)
 
 Adds new features to ngCookies.
 
