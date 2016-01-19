@@ -22,12 +22,12 @@ module.exports = (function() {
   var bannerTitle = pkg.title || pkg.name;
 
   config.banner =
-    '/*!\n' +
-    ' * ' + bannerTitle + '\n' +
-    ' * ' + pkg.description + '\n' +
-    ' * @license ' + pkg.license + '\n' +
-    ' * v' + pkg.version + '\n' +
-    ' */\n';
+      '/*!\n' +
+      ' * ' + bannerTitle + '\n' +
+      ' * ' + pkg.description + '\n' +
+      ' * @license ' + pkg.license + '\n' +
+      ' * v' + pkg.version + '\n' +
+      ' */\n';
 
   //---
 

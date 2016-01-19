@@ -1,6 +1,6 @@
 {
   "name": "ng-array-cookies",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Adds new features to ngCookies.",
   "keywords": [
     "angularJS",
@@ -23,6 +23,7 @@
     "cached": "^4.0.2",
     "del": "^2.2.0",
     "gulp": "^3.9.0",
+    "gulp-bump": "^1.0.0",
     "gulp-concat": "^2.6.0",
     "gulp-debug": "^2.1.2",
     "gulp-inject-string": "^1.1.0",
