@@ -17,10 +17,6 @@
   // but misses .module we can fall back to using window.
   angular = (angular && angular.module ) ? angular : window.angular;
 
-  return angular
-          .module('ngArrayCookies', ['ngCookies'])
-          .decorator('$cookies', CookiesDecorator);
-
   //---
 
   CookiesDecorator.$inject = ['$delegate'];
@@ -95,5 +91,11 @@
     }
 
   }
+
+  //---
+
+  return angular
+          .module('ngArrayCookies', ['ngCookies'])
+          .decorator('$cookies', CookiesDecorator);
 
 }));
