@@ -23,6 +23,8 @@
 
   //---
 
+  CookiesDecorator.$inject = ['$delegate'];
+
   function CookiesDecorator($delegate) {
 
     $delegate.appendObject = appendObject;
@@ -54,7 +56,11 @@
 
         return angular.isObject(config) ? $delegate.putObject(key, obj, config) : $delegate.putObject(key, obj);
       } else if(autoCreate) {
-        return $delegate.putObject(key, [value], config || {});
+        if(angular.isArray(value)) {
+          return $delegate.putObject(key, value, config || {});
+        } else {
+          return $delegate.putObject(key, [value], config || {});
+        }
       } else {
         return false;
       }
@@ -77,8 +83,12 @@
     function spliceObject(key, index, amount, config) {
       var obj = $delegate.getObject(key);
       if(angular.isArray(obj)) {
-        obj.splice(index, amount || 1);
-        return angular.isObject(config) ? $delegate.putObject(key, obj, config) : $delegate.putObject(key, obj);
+        if(angular.isDefined(obj[index])) {
+          obj.splice(index, amount || 1);
+          return angular.isObject(config) ? $delegate.putObject(key, obj, config) : $delegate.putObject(key, obj);
+        } else {
+          return false;
+        }
       } else {
         return false;
       }
